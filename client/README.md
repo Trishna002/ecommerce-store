@@ -1,16 +1,76 @@
-# React + Vite
+# 🛍️ Cartify – MERN E-Commerce Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Cartify is a full-stack MERN e-commerce application built to demonstrate modern web development concepts including authentication, authorization, product management, cart functionality, and order processing.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* 🔐 User Registration & Login
+* 🔑 JWT Authentication
+* 👤 Role-Based Access (Admin/User)
+* 📦 Product Management (CRUD)
+* 🛒 Shopping Cart
+* ➕ Update Product Quantity
+* ❌ Remove Products from Cart
+* 📋 Order Placement
+* 📜 Order History
+* 📱 Responsive Frontend
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Frontend**
 
-## Expanding the ESLint configuration
+* React
+* React Router
+* Axios
+* CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Backend**
+
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* JSON Web Token (JWT)
+* bcrypt.js
+
+## 📂 Project Structure
+
+```text
+Cartify
+├── client
+├── server
+└── README.md
+```
+
+## 🚀 Getting Started
+
+1. Clone the repository.
+2. Install dependencies for both the `client` and `server`.
+3. Configure the required environment variables.
+4. Start the backend server.
+5. Start the frontend application.
+
+## 📌 Project Highlights
+
+* Secure authentication using JWT
+* Admin-only product management
+* Dynamic shopping cart with quantity updates
+* Order placement and order history
+* RESTful API architecture
+* MongoDB database integration
+
+## 🎯 Future Enhancements
+
+* Product Search
+* Category Filters
+* Payment Gateway Integration
+* Wishlist
+* User Profile
+* Product Reviews & Ratings
+* Email Notifications
+
+## 👩‍💻 Developer
+
+**Trishna Verma**
+
+A MERN Stack portfolio project built to strengthen full-stack development skills.
