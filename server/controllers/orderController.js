@@ -1,4 +1,5 @@
 const Order = require("../models/Order");
+const Cart = require("../models/Cart");
 
 const createOrder = async (req, res) => {
   try {
@@ -8,7 +9,16 @@ const createOrder = async (req, res) => {
       totalPrice: req.body.totalPrice,
     });
 
-    res.status(201).json(order);
+    // Clear user's cart after successful order
+    await Cart.findOneAndUpdate(
+      { user: req.user._id },
+      { products: [] }
+    );
+
+    res.status(201).json({
+      message: "Order placed successfully",
+      order,
+    });
   } catch (error) {
     res.status(500).json({
       message: error.message,
